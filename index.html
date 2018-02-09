@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<!-- <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b>Extensive database on UFO sightings mostly from US, CANADA, UK and AUSTRALIA!! Submit a new sighting or search for previous sightings!!</b></a>
+        </div>
+    </div>
+</nav> -->
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+    <a class="page_header" href="#"><h3><b>Extensive database on UFO sightings mostly from US, CANADA, UK and AUSTRALIA!!</b><h3></a>
+</div>
+
+<body background="background image.JPG">  <!--Inserts blue stary sky background-->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="form-group">
+          <h4><b>Submit details of a new UFO sighting below.</b></h4>
+          <input type="text" class="form-control" id="sub_date" placeholder="Enter date (use format 2/4/2011)">
+          <input type="text" class="form-control" id="sub_city" placeholder="Enter city"><br>
+          <input type="text" class="form-control" id="sub_state" placeholder="Enter state">
+          <input type="text" class="form-control" id="sub_country" placeholder="Enter country"><br>
+          <input type="text" class="form-control" id="sub_shape" placeholder="Enter shape">
+          <input type="text" class="form-control" id="sub_duration" placeholder="Enter duration"><br>
+          <input type="text" class="form-control" id="sub_comments" placeholder="Enter description">
+          <button id="submit" class="btn btn-success right"><b>Submit</b></button>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-6"></div>
+        <div class="form-group">
+          <h4><b>Search previous UFO sightings by date, city, etc.</b></h4><br>
+          <h5><b>(Available data is from 1/1/2010 to 5/8/2014)</b></h5>
+          <!-- Input boxes for user inputs is created below. -->
+          <input type="text" class="form-control" id="datetime" placeholder="Enter date (use format 2/4/2011)">
+          <input type="text" class="form-control" id="city" placeholder="Enter city"><br>
+          <input type="text" class="form-control" id="state" placeholder="Enter state">          
+          <input type="text" class="form-control" id="country" placeholder="Enter country"><br>
+          <input type="text" class="form-control" id="shape" placeholder="Enter shape">
+         
+          <!-- placeholder: In the input box, the text that appears in gray
+            (on which you can start typing your input) is listed in placeholder.-->
+          <!-- All textual <input>, <textarea>, and <select> elements with 
+            class .form-control have a width of 100%.-->
+            <a id="search" class="btn btn-success right"><b>Search</b></a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row"> -->
+      <div class="col-xs-12 col-xs-12 col-md-12">
+        <table class="table">
+          <div class="box_vis">
+              <h4><b><center>Enjoy results of your search below.</b> 
+                <a id="previous" class="btn btn-success right"><b>Previous</b></a>
+                <a id="next" class="btn btn-success right"><b>Next</center></b></a>
+              </h4> <!--text & buttons wrapped in <h4></h4> shows them in single line-->
+            <thead>
+              <tr>
+                <th>date/time</th>
+                <th>city</th>
+                <th>state</th>
+                <th>country</th>
+                <th>shape</th>
+                <th>duration</th>
+                <th>comments</th>
+              </tr>
+            </thead>
+          </div>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

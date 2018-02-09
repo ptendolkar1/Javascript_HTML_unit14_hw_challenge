@@ -1,0 +1,64 @@
+.form-control {
+  display: inline-block;
+  width: 230px;
+  margin-top: 20px;
+}
+
+.form-group {
+  background-color: rgb(224, 222, 222);
+  padding: 10px;
+  display: block;
+  height: auto;
+  font: bold;
+  font-family: sans-serif;
+  color: blue;
+  font-weight: normal;
+  overflow : auto;
+}
+
+.page_header {
+  background-color: rgb(224, 222, 222);
+  display: block;
+  height: auto;
+  font: bold;
+  font-family: sans-serif;
+  color: blue;
+  font-weight: normal;
+  overflow : auto;
+  text-align: center;
+}
+
+
+.nav li {
+    display:inline-block;
+}
+
+.box_vis {
+  text-align: center;
+  background-color: rgb(238, 235, 235);
+  padding: 10px;
+  margin-top: 15px;
+  display: block;
+  height: auto;
+  font: bold;
+  font-family: sans-serif;
+  color: blue;
+  font-weight: bold;
+  overflow : auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+thead {
+  color: white
+}
+
+tbody {
+  color: white
+}
