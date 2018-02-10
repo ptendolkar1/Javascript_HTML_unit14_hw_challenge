@@ -167,8 +167,8 @@ function handleSearchClick() {
         filtered = filtered.filter(function(element) {
           var vals = Object.values(element); //Object.values() method returns array of the  object's own enumerable property values
           //console.log("i=", i,"vals[i]=", vals[i], " filtersArr[i][1]=", filtersArr[i][1])
-          return vals[i] === filtersArr[i][1]
-        }) 
+          return vals[i].includes(filtersArr[i][1]) //instead of "return vals[i] === (filtersArr[i][1])", because if user inputs Austin it
+        })  // should output results for Austin TX, Austin XX, and Austintown XX. If user inputs Texas or TX, then it should output Austin, TX
       } 
   }
   console.log("i=", i, " filtered after for loop=", filtered)
